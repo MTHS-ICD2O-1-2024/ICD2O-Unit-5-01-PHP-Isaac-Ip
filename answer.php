@@ -34,20 +34,14 @@
         <div id="user-info">
           <?php
           $userNumber = $_GET["user-number"];
-          $randomNumber = Math.floor(Math.random() * 6) + 1
+          $randomNumber = rand(1, 6);
 
-
-          // process
               // process 
-    if ($userNumber === $randomNumber) {
-        // output 
-        document.getElementById('result').innerHTML =
-
-            'echo "You have guessed the correct number! "'
-
-
-          // output
-          echo "If the fahrenheit is " . $fahrenheit . "°F, then the celsius is " . (round($celsius, 2)) . "°C. ";
+        if ($userNumber == $randomNumber) {
+  echo "You have guessed correctly!";
+} else {
+            echo "You have guessed incorrectly! The correct answer is:" . $randomNumber . "°C. ";
+}
           ?>
         </div>
       </div>

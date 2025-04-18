@@ -40,7 +40,7 @@
         if ($userNumber == $randomNumber) {
   echo "You have guessed correctly!";
 } else {
-            echo "You have guessed incorrectly! The correct answer is:" . $randomNumber . "°C. ";
+            echo "You have guessed incorrectly! The correct answer is:" . $randomNumber . "";
 }
           ?>
         </div>
